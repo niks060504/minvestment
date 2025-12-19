@@ -1,0 +1,197 @@
+
+.services-page {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  animation: fadeIn 0.8s ease-in-out;
+  padding-top: 0px;
+}
+.plain-link {
+  text-decoration: none;
+  color: inherit; /* Keep the text color same as surrounding text */
+  cursor: pointer;
+}
+
+.services-header1 {
+  text-align: center;
+  padding: 160px 20px 60px; /* Add extra padding-top to compensate for navbar height */
+  background: #007aff;
+  color: white;
+  margin-top: -80px; /* Pull background behind navbar */
+  position: relative;
+  z-index: 1;
+}
+
+.services-header1 h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.services-header1 p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.services-title {
+  text-align: center;
+  margin: 60px 0 20px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.services-title h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.services-title span {
+  color: #007aff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 10% 60px;
+}
+
+.service-card {
+  background: #f8f9fd;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease;
+}
+
+.service-card .icon {
+  font-size: 36px;
+  color: #007aff;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  text-align: center;
+  padding: 60px 10%;
+  background: #f1f5f9;
+}
+
+.testimonial-section .subtitle {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.testimonial-section h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.testimonial-section span {
+  color: #007aff;
+}
+.testimonial-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonial-slider button {
+  background-color: white;
+  border: none;
+  font-size: 24px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.testimonial-slider button:hover {
+  background-color: #007aff;
+  color: white;
+}
+
+.testimonial-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  margin: 0 auto 30px;
+  text-align: left;
+}
+
+.stars {
+  color: gold;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.comment {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.initial-avatar {
+  background-color: #007aff;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.testimonial-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.testimonial-buttons button {
+  background: #007aff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.testimonial-buttons button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-up {
+  animation: fadeIn 1s ease forwards;
+}

@@ -1,0 +1,353 @@
+.banner-section {
+  padding: 0px;
+  background: #f8f9fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 1;
+}
+
+.banner-container {
+  display: flex;
+  background-color: #f8faff;
+  padding: 0;
+  opacity: 1;
+  padding-top: 40px;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.greeting {
+  font-size: 20px;
+  color: #555;
+}
+
+.banner-text h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.highlight {
+  color: #0047ff;
+}
+
+.highlight1 {
+  color: white;
+}
+
+.tagline {
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #0047ff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 2px solid #000;
+  background: transparent;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-outline img {
+  width: 20px;
+  height: 20px;
+}
+
+.banner-image {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  min-width: 300px;
+}
+
+.main-person {
+  max-width: 100%;
+  height: auto;
+}
+
+.banner-container {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.banner-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.banner-left h3 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner-left h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner-left .highlight {
+  color: #0077ff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner-left .tagline {
+  font-size: 36px;
+  font-weight: 500;
+  color: #444;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner-left p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.about-btn,
+.whatsapp-btn {
+  padding: 10px 18px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-btn {
+  background: #0077ff;
+  color: white;
+}
+
+.about-btn:hover {
+  background: #0056cc;
+}
+
+.whatsapp-btn {
+  background: white;
+  border: 1px solid #0077ff;
+  color: #0077ff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.whatsapp-btn:hover {
+  background: #e6f3ff;
+}
+
+.banner-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent; /* Make it transparent */
+  border-radius: 0px;
+  box-shadow: none; /* Remove box shadow here */
+}
+
+.profile-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  border-radius: 0px;
+  animation: floatProfile 3s ease-in-out infinite;
+  filter: drop-shadow(0 10px 1px rgba(0, 0, 0, 0.2));
+}
+
+
+
+@keyframes floatProfile { /* UPDATED: Animation for floating effect */
+  0% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Infinite scrolling tags */
+.scrolling-categories {
+  background-color: #007aff;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  position: relative;
+}
+.scroll-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 5rem; /* Even space between items */
+  animation: scroll 30s linear infinite;
+}
+.category-item {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.category-icon {
+  font-size: 24px;
+  color: white;
+}
+
+
+@keyframes scrollTags { /* UPDATED: Keyframes for infinite scrolling */
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* Responsive for tablets and smaller */
+@media screen and (max-width: 1024px) {
+  .banner-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+
+  .banner-left, .banner-right {
+    width: 100%;
+  }
+
+  .banner-left h1 {
+    font-size: 28px;
+  }
+
+  .banner-left .tagline {
+    font-size: 24px;
+  }
+
+  .banner-buttons {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px
+  }
+
+  .profile-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .category-item {
+    font-size: 18px;
+    gap: 2rem;
+  }
+
+  .scroll-track {
+    gap: 2rem;
+  }
+}
+
+/* Even smaller screens like mobiles */
+@media screen and (max-width: 600px) {
+  .banner-left h3 {
+    font-size: 16px;
+  }
+
+  .banner-left h1 {
+    font-size: 22px;
+  }
+
+  .banner-left .tagline {
+    font-size: 20px;
+  }
+
+  .banner-left p {
+    font-size: 14px;
+  }
+
+  .about-btn,
+  .whatsapp-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .profile-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .scrolling-categories {
+    padding: 6px 0;
+  }
+
+  .category-item {
+    font-size: 16px;
+  }
+
+  .category-icon {
+    font-size: 16px;
+  }
+}

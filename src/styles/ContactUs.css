@@ -1,0 +1,132 @@
+.contact-page {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  animation: fadeIn 0.8s ease-in-out;
+  padding-top: 0;
+}
+
+.contact-header {
+  text-align: center;
+  padding: 160px 20px 60px;
+  background: #007aff;
+  color: white;
+  margin-top: -80px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.contact-header p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.contact-form-section {
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.contact-form-section h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.contact-form-section span {
+  color: #007aff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #005bb5;
+}
+
+.whatsapp-section {
+  text-align: center;
+  background: #f1f5f9;
+  padding: 60px 10%;
+}
+
+.whatsapp-section h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.qr-code {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.whatsapp-number {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.address-section {
+  text-align: center;
+  padding: 40px 10%;
+  background: #fff;
+}
+
+.address-section h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.address-section p {
+  font-size: 16px;
+  color: #555;
+}
+
+.footer {
+  background: #007aff;
+  color: white;
+  padding: 30px 10%;
+  text-align: center;
+}
+
+.footer .disclaimer {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #e0e0e0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
